@@ -38,5 +38,5 @@ public class foodwaste {
 		// Enter template name
 		return "facts";
 	}
-
+	
 }

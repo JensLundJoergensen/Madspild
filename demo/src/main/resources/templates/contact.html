@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html>
+
     <head th:include="fragments/header :: header">
     </head>
     <body>
         <div th:include="fragments/navbar :: navbar"></div>
+
+        <main class="container content box">
+
+            <h1 class="title"> Oplysninger til afhentning </h1>
+            <p class="subtitle"> udfyld formular</p>
+        
+            <form method="post" action="#">
+                <div class="field">
+                    <label class="label" for="the_name"> Fornavn*</label>
+                    <input type="text" name="name" id="the_name" class="input" placeholder= "indtast navn" >
+                </div>
+
+                <div class="field">
+                    <label class="label" for="the_name"> Efternavn</label>
+                    <input type="text" name="name" id="the_name" class="input" placeholder= "indtast efternavn" >
+                </div>
+        
+                <div class="field">
+                    <label class="label" for="the_email">Email*</label>
+                    <input type="email" name="email" id="the_email" class="input" placeholder= "indtast email" >
+                
+                </div>
+                        </div>
+        
+                <div class="field">
+                    <label class="label" for="the_email">Adresse*</label>
+                    <input type="email" name="email" id="the_email" class="input" placeholder= "indtast adresse" >
+                  </div>
+
+                  <div class="field">
+                    <label class="label" for="the_name"> Postnummer</label>
+                    <input type="text" name="name" id="the_name" class="input" placeholder= "indtast postnummer" >
+                </div>
+            
+                <div class="field">
+                    <label class="label" for="the_email">Telefonnummer*</label>
+                    <input type="email" name="email" id="the_email" class="input" placeholder= "indtast telefonnummer" >
+                
+                </div>
+
+                <div class="field">
+                    <label class="label" for="the_name"> Andet*</label>
+                    <input type="text" name="name" id="the_name" class="input" placeholder= "Feedback" >
+                </div>
+        
+                <div class="field">
+                    <input type="submit" class="button is-primary">
+                </div>
+
+            
+
+            </div>
+            </form>
+        </main>
+
     </body>
 </html>
