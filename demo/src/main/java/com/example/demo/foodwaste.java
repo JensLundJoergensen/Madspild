@@ -22,7 +22,7 @@ public class foodwaste {
 	@GetMapping("/facts")
 	public String facts() {
 		// Enter template name
-		return "contact";
+		return "facts";
 	}
 
 }
