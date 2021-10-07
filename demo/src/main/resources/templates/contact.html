@@ -9,7 +9,7 @@
         <main class="container content box">
 
             <h1 class="title"> Oplysninger til afhentning </h1>
-            <p class="subtitle"> Udfyld med dine oplysninger for at arrangere en afhentning ved adressen.</p>
+            <p class="subtitle"> Udfyld dine oplysninger for at arrangere en afhentning ved adressen.</p>
         
             <form method="post" action="#">
                 <div class="field">
@@ -36,7 +36,7 @@
 
                   <div class="field">
                     <label class="label" for="the_name"> Postnummer*</label>
-                    <input type="text" name="name" id="the_name" class="input" placeholder= "Indtast postnummer" required>
+                    <input type="text" name="name" id="the_name" class="input" maxlength="4" placeholder= "Indtast postnummer" required>
                 </div>
             
                 <div class="field">
@@ -61,4 +61,6 @@
         </main>
 
     </body>
+    <footer th:include="fragments/footer :: footer">
+    </footer>
 </html>
