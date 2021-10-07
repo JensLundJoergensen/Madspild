@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 @SpringBootApplication
 public class foodwaste {
-ContactHandler uggabug = new ContactHandler();
+ContactHandler handler = new ContactHandler();
 	public static void main(String[] args) {
 		SpringApplication.run(foodwaste.class, args);
 	}
@@ -32,7 +32,7 @@ ContactHandler uggabug = new ContactHandler();
 
 	@PostMapping("/contact")
 	public void postContact() {
-		int result=uggabug.validateContact(firstName, lastName, email, message, address, postalCode, phoneNumber)
+		int result=handler.validateContact(firstName, lastName, email, message, address, postalCode, phoneNumber)
 
 	}
 
