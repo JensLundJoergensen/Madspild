@@ -44,7 +44,6 @@ ContactHandler handler = new ContactHandler();
 		} if (result.equals("400")) {
 			return "fail";
 
-		}
 		return "contact";
 	}
 
