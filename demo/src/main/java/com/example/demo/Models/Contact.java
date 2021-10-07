@@ -20,7 +20,6 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-
     @Override
     public String toString() {
         return "Message [address=" + address + ", email=" + email + ", firstName=" + firstName + ", lastName="
@@ -83,6 +82,4 @@ public class Contact {
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    
-
 }

@@ -8,10 +8,10 @@ public class ContactHandler {
     public ContactHandler() { 
     }
     
-
     public String validateContact(String firstName, String lastName, String email, String message, 
-    String address, int postalCode, int phoneNumber) {
-
-        return "";
+    String address, String postalCode, String phoneNumber) {
+       //db.writeMessage(firstName, lastName, email, message, address, postalCode, phoneNumber);
+       
+        return "200";
     }
 }
